@@ -1,5 +1,4 @@
-
-        }pipeline {
+      pipeline {
     agent any
 
     stages {
@@ -17,6 +16,7 @@
             steps {
                 echo 'Running'
             }
+        }
     }
 }
 
