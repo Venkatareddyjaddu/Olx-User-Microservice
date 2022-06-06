@@ -17,6 +17,16 @@
                 echo 'Running'
             }
         }
+          stage('Test Report Using jacoco') {
+            steps {
+                echo 'jacoco'
+            }
+        }
+           stage('Building Docker Image') {
+            steps {
+                echo 'Building Docker Image'
+            }
+        }
     }
 }
 
