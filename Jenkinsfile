@@ -1,12 +1,7 @@
       pipeline {
     agent any
 
-    stages {
-        stage('checkout') {
-            steps {
-                git 'https://github.com/Venkatareddyjaddu/Olx-User-Microservice.git'
-            }
-        }
+   
             stage('Compile') {
             steps {
                 bat 'mvn clean compile'
