@@ -4,7 +4,7 @@
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/Venkatareddyjaddu/Olx-User-Microservice'
+                git 'https://github.com/Venkatareddyjaddu/Olx-User-Microservice.git'
             }
         }
             stage('Compile') {
