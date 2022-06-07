@@ -4,17 +4,17 @@
     stages {
         stage('checkout') {
             steps {
-                git 'https://github.com/mohammadazeez963/javaProject.git'
+                git 'https://github.com/Venkatareddyjaddu/Olx-User-Microservice'
             }
         }
             stage('Compile') {
             steps {
-                echo 'Compiling'
+                bat 'mvn clean compile'
             }
         }
         stage('Run') {
             steps {
-                echo 'Running'
+                bat 'mvn package'
             }
         }
           stage('Test Report Using jacoco') {
