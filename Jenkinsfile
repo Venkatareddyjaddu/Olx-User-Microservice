@@ -14,7 +14,7 @@ stages {
         }
           stage('Test Report Using jacoco') {
             steps {
-                echo 'jacoco'
+                jacoco()
             }
         }
            stage('Building Docker Image') {
